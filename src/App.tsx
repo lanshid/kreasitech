@@ -148,7 +148,7 @@ function App() {
             <div className='dots flex gap-2 justify-center items-center'>
               {
                 speciality?.map((x, i) => (
-                  <button onClick={() => setSpecialityPage(i+1)} className={`w-[10px] h-[10px] border-2 rounded-lg bg-blue-300 ${x.page === specialityPage && 'border-blue-500 !bg-white' }`}></button>
+                  <button key={i} onClick={() => setSpecialityPage(i+1)} className={`w-[10px] h-[10px] border-2 rounded-lg bg-blue-300 ${x.page === specialityPage && 'border-blue-500 !bg-white' }`}></button>
                 ))
               }
             </div>
